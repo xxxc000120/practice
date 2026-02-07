@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>极速道具赛车</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="game-shell">
+      <section class="hud">
+        <h1>极速道具赛车</h1>
+        <div class="controls">
+          <label for="mapSelect">地图：</label>
+          <select id="mapSelect"></select>
+          <button id="restartBtn">重开本图</button>
+        </div>
+        <div class="stats">
+          <span id="lapStat">圈数: 0 / 3</span>
+          <span id="speedStat">速度: 0</span>
+          <span id="itemStat">道具: 无</span>
+          <span id="skillStat">技能冷却: 0s</span>
+        </div>
+        <p class="help">
+          方向键驾驶 | Shift 漂移 | E 使用道具 | 空格释放技能（氮气冲刺）
+        </p>
+      </section>
+      <canvas id="gameCanvas" width="960" height="600"></canvas>
+    </main>
+    <script src="game.js"></script>
+  </body>
+</html>
